@@ -1,0 +1,7 @@
+# Options
+Options +MultiViews
+
+# Errors
+ErrorDocument 404 /ketewa/index
+ErrorDocument 403 /error/403.php
+ErrorDocument 503 /error/503.php

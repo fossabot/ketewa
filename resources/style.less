@@ -1,0 +1,92 @@
+@basecolor: #fdda14;
+@bannerheight: 100px;
+body{
+	background: white;
+	font-family: "Candara";
+}
+*{margin:0}
+.banner{
+	background: @basecolor;
+	margin-bottom: 20px;
+	height: @bannerheight;
+}
+.banner .logo{
+	width:300px;
+	height: @bannerheight;
+	background: url("ketewa.png") 100% no-repeat;
+	background-size: 300px;
+	float: left;
+}
+.banner .navigation{
+	list-style: none;
+	line-height: @bannerheight;
+}
+.banner .navigation li{
+	display: inline;
+	padding: 0 1em;
+}
+.banner .navigation li a{
+	color: #244;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.page-content{
+	width: 100%;
+}
+.text-form{
+	display: block;
+	margin: 30px auto 10px;
+	text-align: center;
+}
+.text-form textarea{
+	width: 80%;
+	padding:8px;
+	border: 1px solid #cfcfcf;
+	font-family: candara
+}
+.text-form label{
+	font-weight: bold;
+	color: #335;
+	line-height: 10px
+}
+.text-form input[type=text],
+.text-form input[type=password]{
+	padding:8px;
+	border: 1px solid #cfcfcf;
+	font-size: 1.2em;
+	margin: 12px;
+}
+.text-form button[type=submit]{
+	background: #478;
+	padding:8px;
+	color: @basecolor;
+	margin-top: 20px;
+	border:1px solid #777;
+	font-size: 1.2em;
+}
+.text-form button[type=submit]:hover{
+	background: #efefef;
+	cursor: pointer;
+}
+.text-link{
+	font-size: 1.5em;
+	color:#5a6;
+	margin-bottom: 40px;
+}
+
+@media (min-width:700px){
+	.text-form{
+		width:60%;
+	}	
+}
+
+@media (max-width:700px){
+	.text-form{
+		margin-top: 100px;
+		width:100%;
+	}	
+	.banner .navigation li{
+		padding: 0 0.7em;
+	}
+}
