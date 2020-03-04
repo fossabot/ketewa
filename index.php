@@ -1,6 +1,6 @@
 <?php 
 include "includes.php";
-$pageLink = "jcommey.gdk.mx/ketewa";
+$pageLink = "localhost/ketewa";
 $objProc = new Process();
 $url = $_SERVER['REQUEST_URI'];
 $id = substr($url, strrpos($url, '/') + 1);
