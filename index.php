@@ -1,6 +1,6 @@
 <?php 
 include "includes.php";
-$pageLink = "localhost/ketewa";
+$pageLink = "https://ketewa.herokuapp.com/";
 $objProc = new Process();
 $url = $_SERVER['REQUEST_URI'];
 $id = substr($url, strrpos($url, '/') + 1);
